@@ -1,0 +1,4 @@
+﻿  Source.cpp
+D:\cppCourseLabs\Lab1\task3\Source.cpp(59,32): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\cppCourseLabs\Lab1\task3\Source.cpp(60,18): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  task3.vcxproj -> D:\cppCourseLabs\Lab1\x64\Debug\task3.exe
