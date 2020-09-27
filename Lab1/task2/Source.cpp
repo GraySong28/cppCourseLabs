@@ -37,7 +37,7 @@ int main()
 	int** array = new int* [SIZE]; 
 	for (int i = 0; i < SIZE; ++i)
 	{     
-		array[i] = new int[i + 1];
+		array[i] = new int[SIZE];
 	}
 	int* array1D = new int[15];
 	// Вызов функции заполнения
@@ -48,10 +48,11 @@ int main()
 	arrayTranslation(array, array1D);
 		
 	// Удаление массива
-	delete array;
-	array = 0;
-	delete array1D;
-	array1D = 0;
+	for (int i = 0; i < SIZE; ++i)
+	{
+		delete [] array[i];
+	}
+	delete [] array;
 }
 
 // Функция расчёта факториала
@@ -67,7 +68,7 @@ void fillingTheArray(int** array)
 	{
 		for (int j = 0; j < SIZE; ++j)
 		{
-			array[i][j] = fact(i + j);
+			*(*(array + i) + j) = fact(i + j);
 		}
 	}
 }
