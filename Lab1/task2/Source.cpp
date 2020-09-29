@@ -47,12 +47,15 @@ int main()
 	// Преобразование массива и вывести
 	arrayTranslation(array, array1D);
 		
-	// Удаление массива
+	// Удаление 2D массива
 	for (int i = 0; i < SIZE; ++i)
 	{
 		delete [] array[i];
 	}
 	delete [] array;
+	//Удаление 1D массива
+	delete[] array1D;
+	array1D = 0;
 }
 
 // Функция расчёта факториала
