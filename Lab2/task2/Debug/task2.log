@@ -1,0 +1,3 @@
+﻿  Source.cpp
+D:\Sharaga\1 kurs\cppCourseLabs\Lab2\task2\Source.cpp(140,7): warning C4101: dest: неиспользованная локальная переменная
+  task2.vcxproj -> D:\Sharaga\1 kurs\cppCourseLabs\Lab2\Debug\task2.exe
